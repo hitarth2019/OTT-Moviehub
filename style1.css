@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("ott1.jpg");
+    background-size: 100% 100%;
+    background-position: right bottom;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    margin: 8% auto 0;
+  }
+  .sign-up-page {
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.8);
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    margin: 150px 30px 50px 250px;
+    border-radius: 20px;
+    animation: slideme 0.2s linear;
+  }
+  
+  @keyframes slideme {
+    0% {
+      transform: skewX(0deg) translateX(-500px);
+    }
+    100% {
+      transform: skewX(0deg);
+    }
+  }
+  
+  .sign-up-page h1 {
+    color: #1c8adb;
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 100%;
+    border: 1px solid #1c8adb;
+    outline: none;
+  }
+  
+  hr {
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  .or-part {
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 30px;
+  }
+  
+  button {
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .sign-up-btn {
+    background-color: #1c8adb;
+  }
+  
+  .google-btn {
+    background-color: white;
+    width: 25%;
+    position: relative;
+  }
+  
+  .fb-btn {
+    background-color: white;
+    width: 25%;
+    position: relative;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .sign-up-page img {
+    margin-top: -60px;
+  }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moviehub-Series</title>
+    <link rel="stylesheet" href="styleseries.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <!-- <div class="fade"></div> -->
+      <nav>
+        <div class="jm-logo">
+          <a href="index.html"><img src="clapper.png" /></a>
+        </div>
+        <div class="navlinks" id="navLinks">
+          <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <!-- <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li> -->
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- <div class="play">
+        <a href="">
+          <img src="play1.png" style="width: 75px; height: 75px" />
+        </a>
+      </div> -->
+
+      <a href="playvideo.html">
+      <svg
+        id="play"
+        viewBox="0 0 163 163"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        ="0px"
+      >
+        <g fill="none">
+          <g transform="translate(2.000000, 2.000000)" stroke-width="4">
+            <path
+              d="M10,80 C10,118.107648 40.8923523,149 79,149 L79,149 C117.107648,149 148,118.107648 148,80 C148,41.8923523 117.107648,11 79,11"
+              id="lineOne"
+              stroke="#A5CB43"
+            ></path>
+            <path
+              d="M105.9,74.4158594 L67.2,44.2158594 C63.5,41.3158594 58,43.9158594 58,48.7158594 L58,109.015859 C58,113.715859 63.4,116.415859 67.2,113.515859 L105.9,83.3158594 C108.8,81.1158594 108.8,76.6158594 105.9,74.4158594 L105.9,74.4158594 Z"
+              id="triangle"
+              stroke="#A3CD3A"
+            ></path>
+            <path
+              d="M159,79.5 C159,35.5933624 123.406638,0 79.5,0 C35.5933624,0 0,35.5933624 0,79.5 C0,123.406638 35.5933624,159 79.5,159 L79.5,159"
+              id="lineTwo"
+              stroke="#A5CB43"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </a>
+      <div class="text-box">
+        <h1>The Batman</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p>commodi similique distinctio cum inventore ad, maxime</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Genre: Action</p>
+        <p>Duration: 2 hr 56 mins</p>
+        <p>IMDb: 8/10</p>
+      </div>
+
+      <div class="images">
+        <ul>
+          <li>
+            <video
+              src="godzillakong.mp4"
+              type="video/mp4"
+              muted
+              class="vid"
+              loop
+              style="width: 300px; height: 120px"
+              id="godzilla"
+            ></video>
+            <h1>Kong vs Godzilla</h1>
+          </li>
+          <li>
+            <video
+              src="pacificrim.mp4"
+              type="video/mp4"
+              muted
+              class="vid1"
+              loop
+              style="width: 300px; height: 120px"
+              id="pacific"
+            ></video>
+            <h1>Pacific Rim</h1>
+          </li>
+          <li>
+            <video
+              src="nfs.mp4"
+              type="video/mp4"
+              muted
+              class="vid2"
+              loop
+              style="width: 300px; height: 120px"
+              id="nfs"
+            ></video>
+            <h1>Need For Speed</h1>
+          </li>
+          <li>
+            <video
+              src="marvel.mp4"
+              type="video/mp4"
+              muted
+              class="vid3"
+              loop
+              style="width: 300px; height: 120px"
+              id="marvel"
+            ></video>
+            <h1>Avengers</h1>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="lastwatch">
+      <img src="lastwatch2.png" style="width: 100%; height: 100%" />
+      <img src="lastwatch1.png" style="width: 100%; height: 100%" />
+    </div>
+
+
+
+
+    <script>
+      //godzilla
+      let clip = document.querySelector(".vid");
+
+      clip.addEventListener("mouseover", function (e) {
+        clip.play();
+      });
+
+      clip.addEventListener("mouseout", function (e) {
+        clip.pause();
+      });
+
+      // pacific rim clip
+      let clip1 = document.querySelector(".vid1");
+
+      clip1.addEventListener("mouseover", function (e) {
+        clip1.play();
+      });
+
+      clip1.addEventListener("mouseout", function (e) {
+        clip1.pause();
+      });
+
+      //nfs
+      let clip2 = document.querySelector(".vid2");
+
+      clip2.addEventListener("mouseover", function (e) {
+        clip2.play();
+      });
+
+      clip2.addEventListener("mouseout", function (e) {
+        clip2.pause();
+      });
+
+      //marvel
+      let clip3 = document.querySelector(".vid3");
+
+      clip3.addEventListener("mouseover", function (e) {
+        clip3.play();
+      });
+
+      clip3.addEventListener("mouseout", function (e) {
+        clip3.pause();
+      });
+    </script>
+  </body>
+</html>
